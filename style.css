@@ -1,0 +1,135 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+	border: none;
+	font-family: "Monaspace Neon";
+	font-size: 16px;
+}
+
+/*****************************************************************************************/
+window#waybar {
+	background: transparent;
+	padding: 6px 0;
+}
+
+/*****************************************************************************************/
+#custom-cpu_btop, #custom-gpu_temp, #memory, #power-profiles-daemon, 
+#pulseaudio, #network, #clock, #custom-power, #tray {
+	opacity: 0.75;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+	color: @foreground;
+	padding: 8px 15px;
+}
+
+/*****************************************************************************************/
+#custom-power {
+    background: @color1;
+    color: @background;
+    margin: 0 0 0 10px;
+    padding: 8px 15px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 12px 0 0 12px;
+}
+
+/*****************************************************************************************/
+#custom-cpu_btop {
+    background: @color4;
+    color: @background;
+    padding: 15px 15px;
+}
+
+/*****************************************************************************************/
+#custom-gpu_temp {
+    background: @color2;
+    color: @background;
+    padding: 15px 15px;
+}
+
+/*****************************************************************************************/
+#memory {
+	background: @color3;
+	color: @background;
+    	padding: 15px 15px;
+}
+
+/*****************************************************************************************/
+#power-profiles-daemon {
+	background: @color8;
+	color: @background;
+    	padding: 15px 15px;
+	border-radius: 0 12px 12px 0;
+}
+
+/*****************************************************************************************/
+#workspaces {
+	border-radius: 17px;
+    	padding: 12px 12px;
+	background: alpha(@background, 0.4);
+	opacity: 0.8; 
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modules-left > widget > #workspaces {
+    margin-left: 30px;
+}
+
+#workspaces button {
+	color: rgba(255,255,255,0.5);
+	border: none;
+	text-shadow: none;
+}
+
+#workspaces button.active {
+	color: @color9;
+	border: none;
+	text-shadow: 0px 0px 4px @color9, 0px 0px 8px @color9;
+}
+
+#workspaces button.empty {
+	color: rgba(255,255,255,0.15);
+	border: none;
+}
+
+#workspaces button.empty.active {
+	color: @color9;
+	border: none;
+	text-shadow: 0px 0px 6px @color9, 0px 0px 12px @color9;
+}
+
+/*****************************************************************************************/
+#clock {
+	background: @color2;
+	color: @background;
+	border-radius: 12px;
+	font-size: 18px;
+}
+
+/*****************************************************************************************/
+#tray {
+	margin: 0 0 0 15px;
+	border-radius: 12px 0 0 12px; 
+	background: @color1;
+	color: @background;
+	min-width: 20px; 
+}
+
+/*****************************************************************************************/
+.modules-right > widget:first-child #pulseaudio {
+	margin-left: 15px;
+	border-radius: 12px 0 0 12px;
+}
+
+#pulseaudio {
+	background: @color5;
+	color: @background;
+}
+
+/*****************************************************************************************/
+#network {
+	margin: 0 10px 0 0;
+	border-radius: 0 12px 12px 0;
+	background: @color6;
+	color: @background;
+}
