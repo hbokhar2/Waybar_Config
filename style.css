@@ -22,7 +22,7 @@ window#waybar {
 /*****************************************************************************************/
 #custom-cpu_btop, #custom-gpu_temp, #memory, #power-profiles-daemon, 
 #pulseaudio, #network, #clock, #custom-power, #tray {
-	opacity: 0.75;
+	opacity: 0.85;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 	color: @foreground;
 	padding: 8px 15px;
@@ -83,7 +83,7 @@ window#waybar {
 }
 
 #workspaces button {
-	color: rgba(255,255,255,0.5);
+	color: rgba(255,255,255,0.7);
 	border: none;
 	text-shadow: none;
 }
@@ -95,14 +95,14 @@ window#waybar {
 }
 
 #workspaces button.empty {
-	color: rgba(255,255,255,0.15);
+	color: rgba(255,255,255,0.35);
 	border: none;
 }
 
 #workspaces button.empty.active {
-	color: @color9;
+	color: #ffffff;
 	border: none;
-	text-shadow: 0px 0px 6px @color9, 0px 0px 12px @color9;
+	text-shadow: 0px 0px 6px #ffffff, 0px 0px 12px #ffffff;
 }
 
 /*****************************************************************************************/
