@@ -8,8 +8,15 @@
 
 /*****************************************************************************************/
 window#waybar {
-	background: transparent;
-	padding: 6px 0;
+	background-color: alpha(@background, 0.2);
+	border-radius: 60px;
+}
+
+#waybar {
+	background-color: alpha(@background, 0.4);
+	border-radius: 60px;
+	padding: 6px 12px;
+	margin: 0 20px; /* THIS creates the shrink effect */
 }
 
 /*****************************************************************************************/
@@ -23,56 +30,56 @@ window#waybar {
 
 /*****************************************************************************************/
 #custom-power {
-    background: @color1;
-    color: @background;
-    margin: 0 0 0 10px;
-    padding: 8px 15px;
-    border-radius: 12px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 12px 0 0 12px;
+	background: @color1;
+	color: @background;
+	margin: 0 0 0 10px;
+	padding: 0px 15px;
+	border-radius: 12px;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 12px 0 0 12px;
 }
 
 /*****************************************************************************************/
 #custom-cpu_btop {
-    background: @color4;
-    color: @background;
-    padding: 15px 15px;
+	background: @color4;
+	color: @background;
+	padding: 15px 15px;
 }
 
 /*****************************************************************************************/
 #custom-gpu_temp {
-    background: @color2;
-    color: @background;
-    padding: 15px 15px;
+	background: @color2;
+	color: @background;
+	padding: 15px 15px;
 }
 
 /*****************************************************************************************/
 #memory {
 	background: @color3;
 	color: @background;
-    	padding: 15px 15px;
+	padding: 15px 15px;
 }
 
 /*****************************************************************************************/
 #power-profiles-daemon {
 	background: @color8;
 	color: @background;
-    	padding: 15px 15px;
+	padding: 15px 15px;
 	border-radius: 0 12px 12px 0;
 }
 
 /*****************************************************************************************/
 #workspaces {
 	border-radius: 17px;
-    	padding: 12px 12px;
+	padding: 12px 12px;
 	background: alpha(@background, 0.4);
 	opacity: 0.8; 
 	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .modules-left > widget > #workspaces {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 #workspaces button {
@@ -82,9 +89,9 @@ window#waybar {
 }
 
 #workspaces button.active {
-	color: @color9;
+	color: #ffffff;
 	border: none;
-	text-shadow: 0px 0px 4px @color9, 0px 0px 8px @color9;
+	text-shadow: 0px 0px 4px #ffffff, 0px 0px 8px #ffffff;
 }
 
 #workspaces button.empty {
@@ -113,6 +120,10 @@ window#waybar {
 	background: @color1;
 	color: @background;
 	min-width: 20px; 
+}
+
+#tray image {
+	margin: 0 3px;
 }
 
 /*****************************************************************************************/
