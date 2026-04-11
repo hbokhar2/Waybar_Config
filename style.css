@@ -8,21 +8,15 @@
 
 /*****************************************************************************************/
 window#waybar {
-	background-color: alpha(@background, 0.2);
+	background: transparent;
+	/*background-color: alpha(@background, 0.2);*/
 	border-radius: 60px;
-}
-
-#waybar {
-	background-color: alpha(@background, 0.4);
-	border-radius: 60px;
-	padding: 6px 12px;
-	margin: 0 20px; /* THIS creates the shrink effect */
 }
 
 /*****************************************************************************************/
 #custom-cpu_btop, #custom-gpu_temp, #memory, #power-profiles-daemon, 
 #pulseaudio, #network, #clock, #custom-power, #tray {
-	opacity: 0.85;
+	opacity: 1.0;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 	color: @foreground;
 	padding: 8px 15px;

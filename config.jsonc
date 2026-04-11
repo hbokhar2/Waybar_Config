@@ -49,7 +49,7 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/custom-modules/power_menu.xml",
 		"menu-actions": {
-			"shutdown": "shutdown",
+			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
@@ -123,5 +123,9 @@
 			"on-click": "shift_up",
 			"on-click-right": "shift_down"
 		}
+	},
+
+	"pulseaudio": {
+		"on-click": "pavucontrol"
 	}
 }
